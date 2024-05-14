@@ -16,6 +16,9 @@ export default function TableThree() {
     let res1 = await fetch("https://student-report-backend.vercel.app/api/students", {
       method: "POST",
       credentials: "include",
+      headers: {
+    "Accept": "*/*",
+  }
     });
     if (res1.status === 401) {
       setauth(false);
