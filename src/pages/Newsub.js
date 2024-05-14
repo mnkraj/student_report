@@ -15,7 +15,7 @@ export default function Newsub() {
     e.preventDefault();
 
     const response = await fetch("https://student-report-backend.vercel.app/api/newsubject", {
-      method: "POST",credentials: "include",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
