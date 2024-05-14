@@ -49,11 +49,11 @@ export default function TableThree() {
   };
 
   useEffect(() => {
-    //window.addEventListener("beforeunload", handleTabClose);
+    window.addEventListener("beforeunload", handleTabClose);
     loaddata();
-    // return () => {
-    //   window.removeEventListener("beforeunload", handleTabClose);
-    // };
+    return () => {
+      window.removeEventListener("beforeunload", handleTabClose);
+    };
   }, []);
 
   
