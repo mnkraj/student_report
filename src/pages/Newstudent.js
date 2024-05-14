@@ -59,7 +59,7 @@ const handleSubmit = async (e) => {
 
 };
 const authentication = async()=>{
-  let auth = await fetch("http://localhost:4000/api/auth", {
+  let auth = await fetch("https://student-report-backend.vercel.app/api/auth", {
     method: "POST",credentials: "include",
     headers: {
       "Content-Type": "application/json",

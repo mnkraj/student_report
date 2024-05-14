@@ -57,7 +57,7 @@ export default function Consolidatedres() {
   };
 
   const authentication = async () => {
-    let auth = await fetch("http://localhost:4000/api/auth", {
+    let auth = await fetch("https://student-report-backend.vercel.app/api/auth", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -70,7 +70,7 @@ export default function Consolidatedres() {
     }
   };
   const handleTabClose = async () => {
-    await fetch("http://localhost:4000/api/logout", {
+    await fetch("https://student-report-backend.vercel.app/api/logout", {
       method: "POST",
       credentials: "include",
     });

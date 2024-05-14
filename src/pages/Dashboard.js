@@ -39,7 +39,7 @@ export default function TableThree() {
   //   loaddata();
   // }, []);
   const handleTabClose = async () => {
-    await fetch("http://localhost:4000/api/logout", {
+    await fetch("https://student-report-backend.vercel.app/api/logout", {
       method: "POST",
       credentials: "include",
     });
