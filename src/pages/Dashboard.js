@@ -20,7 +20,7 @@ export default function TableThree() {
     "Accept": "*/*",
   }
     });
-    if (res1.status === 401) {
+    if (res1.message == "Unauthorized") {
       setauth(false);
       setLoading(false);
       console.log("sdy")
