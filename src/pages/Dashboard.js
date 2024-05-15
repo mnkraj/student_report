@@ -26,17 +26,18 @@ export default function TableThree() {
       console.log("sdy")
       window.location.href = "/unauthorised";
       toast.error("Unauthorised")
-    } else if (res1.ok) {
+    } else {
       const data = await res1.json();
       //console.log("sjh")
       setpeople(data);
       setLoading(false);
       toast.success("Data Fetched Successfully")
-    } else {
-      console.error("Unexpected error:", res1.statusText);
-      setLoading(false);
-      //toast.error("Unexpected error:", res1.statusText)
     }
+    // } else {
+    //   console.error("Unexpected error:", res1.statusText);
+    //   setLoading(false);
+    //   //toast.error("Unexpected error:", res1.statusText)
+    // }
   };
   // useEffect(() => {
   //   loaddata();
