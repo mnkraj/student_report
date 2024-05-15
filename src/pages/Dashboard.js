@@ -20,6 +20,7 @@ export default function TableThree() {
     "Accept": "*/*",
   }
     });
+    res1 = await res1.json();
     if (res1.message == "Unauthorized") {
       setauth(false);
       setLoading(false);
@@ -27,7 +28,7 @@ export default function TableThree() {
       window.location.href = "/unauthorised";
       toast.error("Unauthorised")
     } else {
-      const data = await res1.json();
+      const data = res1;
       //console.log("sjh")
       setpeople(data);
       setLoading(false);
