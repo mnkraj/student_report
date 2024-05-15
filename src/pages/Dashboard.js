@@ -21,7 +21,7 @@ export default function TableThree() {
   }
     });
     res1 = await res1.json();
-    if (res1.message == "Unauthorized") {
+    if (res1.message) {
       setauth(false);
       setLoading(false);
       console.log("sdy")
